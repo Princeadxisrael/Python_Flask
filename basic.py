@@ -1,10 +1,18 @@
-from flask import Flask
-app= Flask(__name__) ##creating an instance of a flask application
+# from flask import Flask, render_template
+
+# app= Flask(__name__) ##creating an instance of a flask application
 
 
+# @app.route('/')
+# def index():
+#     return render_template('home.html')
 
-if __name__=="__main__":
-    app.run(debug=True, port=8001)
+# @app.route('/puupy/<name>')
+# def pup_name(name):
+#     return render_template('puppy.html', name=name)
+
+# if __name__=="__main__":
+#     app.run(debug=True)
 
     
 # @app.route('/')

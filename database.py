@@ -1,14 +1,16 @@
-from dataorm import db, Puppy, app
+from dataorm import db, Puppy
 
-db.create_all()
+db.create_all() #creates the database
 
-sparky= Puppy("Sparky", "Rotweiler", 16)
-frank= Puppy("frank", "Rotweiler", 16)
+sparky= Puppy('sparky', 'rotweirler', 24)
+jacky= Puppy('Jacky', 'Sheep dog', 4)
+
 print(sparky.id)
-print(frank.id)
-db.session.add_all([sparky, frank])
+print(jacky.id)
+
+db.session.add_all([sparky, jacky])
 db.session.commit()
 print(sparky.id)
-print(frank.id)
+print(jacky.id)
 print(sparky)
-print(frank)
+print(jacky)
