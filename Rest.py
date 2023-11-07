@@ -39,3 +39,15 @@ api.add_resource (allstudents, '/students')
 
 if  __name__=="__main__":
     app.run(debug=True)
+
+
+# class Users(Resource):
+#     write a method for fetching data from a csv file in the same dir/ or another dir
+#         def get(self):
+#             pass
+#     write a method for writing data to the CSV file
+#            def post(self):
+#             pass
+#      write a method for updating data to the CSV file
+#          def delete(self):
+#             pass
